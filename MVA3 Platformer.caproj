@@ -8,7 +8,7 @@
     <author-website>http://microsoftvirtualacademy.com</author-website>
     <app-id>com.microsoftvirtualacademy.mva3platformer</app-id>
     <unique-id>3phjf8c2bcezm</unique-id>
-    <saved-with-version>21600</saved-with-version>
+    <saved-with-version>22100</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -271,10 +271,12 @@
     <layout-folder>
         <layout>Layout 1.xml</layout>
         <layout>James Layout.xml</layout>
+        <layout>Shahed Layout.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>James Event Sheet.xml</event-sheet>
+        <event-sheet>Shahed Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="20" />
