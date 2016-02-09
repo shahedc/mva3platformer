@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
@@ -370,6 +371,53 @@
         <object-type name="Touch" sid="1296622030073765">
             <plugin id="Touch" />
         </object-type>
+        <object-type name="ButtonLabel" sid="8568794202446752">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ButtonLeft" sid="4774944447306772">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="117343963702195" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\_work\MVA\mva3platformer\Textures\ButtonLeft.png">
+                        <collision-poly>
+                            <point x="0.147541" y="0.147541" />
+                            <point x="0.5" y="0" />
+                            <point x="0.852459" y="0.147541" />
+                            <point x="1" y="0.5" />
+                            <point x="0.852459" y="0.852459" />
+                            <point x="0.5" y="1" />
+                            <point x="0.147541" y="0.852459" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonRight" sid="5483281230417984">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7415075758458073" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\_work\MVA\mva3platformer\Textures\ButtonRight.png">
+                        <collision-poly>
+                            <point x="0.147541" y="0.147541" />
+                            <point x="0.5" y="0" />
+                            <point x="0.852459" y="0.147541" />
+                            <point x="1" y="0.5" />
+                            <point x="0.852459" y="0.852459" />
+                            <point x="0.5" y="1" />
+                            <point x="0.147541" y="0.852459" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonLabel2" sid="4732302867031195">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Gamepad" sid="8452925963204519">
+            <plugin id="gamepad" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -397,6 +445,11 @@
         <global-instance type="Touch" uid="44">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Gamepad" uid="57">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
     </global-instances>

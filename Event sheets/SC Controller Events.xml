@@ -2,5 +2,81 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>SC Controller Events</name>
-    <events />
+    <events>
+        <event-block sid="9108855127440413">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5631652229665825" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="2261437147999677" type="PlayerS">
+                    <param id="0" name="Object">PlayerSBox</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="2672097420142455">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="7224190620574947" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="5776705928787587" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-25</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="7213883561737634" type="PlayerSBox">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="8393598326921689" type="PlayerS">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="5734424053624999">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5679997791912545" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="1201420637558893" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">25</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="6642336742545875" type="PlayerSBox">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="4427447296919027" type="PlayerS">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1963795982524598">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="6293039852765966" type="PlayerSBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5189449037604154" type="PlayerS">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8618715533925891">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="2518565815357154" type="PlayerSBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9365530459154154" type="PlayerS">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

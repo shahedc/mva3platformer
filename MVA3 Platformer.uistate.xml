@@ -11,7 +11,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">SC Area Layout</layout>
-        <event-sheet active="1" order="1">SC Area Events</event-sheet>
+        <layout order="2">SC Button Layout</layout>
+        <layout order="4">SC Controller Layout</layout>
+        <event-sheet order="1">SC Area Events</event-sheet>
+        <event-sheet order="3">SC Button Events</event-sheet>
+        <event-sheet active="1" order="5">SC Controller Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -39,5 +43,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PlayerSBox/" />
         <folder expanded="1" path="animation-folder/LeftArea/" />
         <folder expanded="1" path="animation-folder/RightArea/" />
+        <folder expanded="1" path="animation-folder/ButtonLeft/" />
+        <folder expanded="1" path="animation-folder/ButtonRight/" />
     </folders-expanded>
 </c2uistate>
