@@ -10,14 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Layout 1</layout>
-        <layout order="2">James Layout</layout>
-        <layout order="3">Shahed Layout</layout>
-        <layout order="4">SC Area Layout</layout>
-        <layout order="6">SC Button Layout</layout>
-        <layout active="1" order="7">SC Controller Layout</layout>
-        <event-sheet order="1">Event sheet 1</event-sheet>
-        <event-sheet order="5">SC Area Events</event-sheet>
+        <layout order="0">SC Area Layout</layout>
+        <event-sheet active="1" order="1">SC Area Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -29,9 +23,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="layout-folder/Shahed/" />
+        <folder expanded="1" path="layout-folder/Shahed/" />
         <folder expanded="1" path="event-folder/" />
-        <folder expanded="0" path="event-folder/Shahed/" />
+        <folder expanded="1" path="event-folder/Shahed/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
@@ -40,5 +34,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Solid/" />
         <folder expanded="1" path="animation-folder/Player2/" />
+        <folder expanded="1" path="animation-folder/SolidGround/" />
+        <folder expanded="1" path="animation-folder/PlayerS/" />
+        <folder expanded="1" path="animation-folder/PlayerSBox/" />
+        <folder expanded="1" path="animation-folder/LeftArea/" />
+        <folder expanded="1" path="animation-folder/RightArea/" />
     </folders-expanded>
 </c2uistate>

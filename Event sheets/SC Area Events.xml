@@ -2,5 +2,99 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>SC Area Events</name>
-    <events />
+    <events>
+        <event-block sid="619251707714636">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="2149256981412826" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="7625972286671163" type="PlayerS">
+                    <param id="0" name="Object">PlayerSBox</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7513530963876814">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5187165172082918" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="1472040238578041" type="PlayerSBox">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="3160391198986525" type="PlayerS">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3903489314290198">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="7510794338089838" type="Touch">
+                    <param id="0" name="Object">LeftArea</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="3037381956475516" type="PlayerSBox">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="3070211753295776" type="PlayerS">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6326393997450901">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8274630571654654" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="6865534537063065" type="PlayerSBox">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="3599107367444879" type="PlayerS">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3635312243361423">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="6540565590469988" type="Touch">
+                    <param id="0" name="Object">RightArea</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="8324336697323614" type="PlayerSBox">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="3411105651860989" type="PlayerS">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="58301250088176">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="116628712981659" type="PlayerSBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7934042522992337" type="PlayerS">
+                    <param id="0" name="Animation">&quot;Run&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6184092837429953">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="6992592714424153" type="PlayerSBox" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5235562286677182" type="PlayerS">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

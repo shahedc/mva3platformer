@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
@@ -266,6 +267,109 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="AreaLabel" sid="1865293151968526">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="treebg" sid="5768006294934064">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\_work\MVA\mva3platformer\Textures\treebg.png" />
+        </object-type>
+        <object-type name="SolidGround" sid="1888621043606611">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1545576666450548">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2443388578096993" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlayerS" sid="7843558351457865">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9442404649852575" speed="5">
+                    <frame duration="1" hotspotX="0.559748" hotspotY="0.377778">
+                        <collision-poly>
+                            <point x="0" y="0.148148" />
+                            <point x="0.559748" y="0.133333" />
+                            <point x="1" y="0.22963" />
+                            <point x="1" y="0.666667" />
+                            <point x="0.559748" y="0.8" />
+                            <point x="0" y="0.540741" />
+                            <point x="0" y="0.377778" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.559748" hotspotY="0.377778" />
+                    <frame duration="1" hotspotX="0.559748" hotspotY="0.373134" />
+                    <frame duration="1" hotspotX="0.559748" hotspotY="0.368421" />
+                    <frame duration="1" hotspotX="0.559748" hotspotY="0.363636" />
+                    <frame duration="1" hotspotX="0.559748" hotspotY="0.363636" />
+                    <frame duration="1" hotspotX="0.559748" hotspotY="0.363636" />
+                    <frame duration="1" hotspotX="0.559748" hotspotY="0.368421" />
+                    <frame duration="1" hotspotX="0.559748" hotspotY="0.368421" />
+                    <frame duration="1" hotspotX="0.559748" hotspotY="0.373134" />
+                    <frame duration="1" hotspotX="0.559748" hotspotY="0.377778" />
+                </animation>
+                <animation framecount="21" loop="0" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="5560458441445097" speed="5">
+                    <frame duration="1" hotspotX="0.396226" hotspotY="0.330508" />
+                    <frame duration="1" hotspotX="0.4" hotspotY="0.31405" />
+                    <frame duration="1" hotspotX="0.407767" hotspotY="0.311475" />
+                    <frame duration="1" hotspotX="0.378947" hotspotY="0.308943" />
+                    <frame duration="1" hotspotX="0.337209" hotspotY="0.314961" />
+                    <frame duration="1" hotspotX="0.320988" hotspotY="0.317829" />
+                    <frame duration="1" hotspotX="0.348315" hotspotY="0.330769" />
+                    <frame duration="1" hotspotX="0.383838" hotspotY="0.343511" />
+                    <frame duration="1" hotspotX="0.396226" hotspotY="0.353846" />
+                    <frame duration="1" hotspotX="0.392523" hotspotY="0.364341" />
+                    <frame duration="1" hotspotX="0.378641" hotspotY="0.362205" />
+                    <frame duration="1" hotspotX="0.386139" hotspotY="0.349206" />
+                    <frame duration="1" hotspotX="0.393939" hotspotY="0.336" />
+                    <frame duration="1" hotspotX="0.375" hotspotY="0.328" />
+                    <frame duration="1" hotspotX="0.325" hotspotY="0.322835" />
+                    <frame duration="1" hotspotX="0.317073" hotspotY="0.320313" />
+                    <frame duration="1" hotspotX="0.337079" hotspotY="0.325581" />
+                    <frame duration="1" hotspotX="0.354167" hotspotY="0.328244" />
+                    <frame duration="1" hotspotX="0.372549" hotspotY="0.330769" />
+                    <frame duration="1" hotspotX="0.383178" hotspotY="0.338583" />
+                    <frame duration="1" hotspotX="0.401869" hotspotY="0.338983" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlayerSBox" sid="5265611666170131">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="5523724815549946">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5885643202839869" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LeftArea" sid="1606624151697399">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8379373509278648" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="RightArea" sid="7358720111840855">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1788217660196291" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="1296622030073765">
+            <plugin id="Touch" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -290,6 +394,11 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="20" />
+        <global-instance type="Touch" uid="44">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />
