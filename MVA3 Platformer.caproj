@@ -269,14 +269,24 @@
     </object-folder>
     <families />
     <layout-folder>
+        <layout-folder name="Shahed">
+            <layout>Shahed Layout.xml</layout>
+            <layout>SC Area Layout.xml</layout>
+            <layout>SC Button Layout.xml</layout>
+            <layout>SC Controller Layout.xml</layout>
+        </layout-folder>
         <layout>Layout 1.xml</layout>
         <layout>James Layout.xml</layout>
-        <layout>Shahed Layout.xml</layout>
     </layout-folder>
     <event-folder>
+        <event-folder name="Shahed">
+            <event-sheet>SC Area Events.xml</event-sheet>
+            <event-sheet>SC Button Events.xml</event-sheet>
+            <event-sheet>SC Controller Events.xml</event-sheet>
+            <event-sheet>Shahed Event Sheet.xml</event-sheet>
+        </event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>James Event Sheet.xml</event-sheet>
-        <event-sheet>Shahed Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="20" />
